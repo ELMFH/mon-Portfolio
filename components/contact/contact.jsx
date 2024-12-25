@@ -3,6 +3,8 @@ import { FaWhatsapp, FaTiktok, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import { TbWorldHeart } from "react-icons/tb";
+import Link from "next/link";
 
 function Contact() {
   const [state, handleSubmit] = useForm("mjvnrwkr");
@@ -96,6 +98,10 @@ function Contact() {
                   <FaLinkedin className="text-accent text-[25px]"   />
                   <p>EL MEHDI EL FHAILI</p>
                 </span>
+                <Link className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
+                  <TbWorldHeart className="text-accent text-[25px]"  />
+                  <p>ancien portfolio </p>
+                </Link>
                 <span className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
                   <FaMapMarkerAlt className="text-accent text-[25px]"  />
                   <p>MAROC BENGUERIR HAY RIYAD </p>
