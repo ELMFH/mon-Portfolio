@@ -1,5 +1,5 @@
-"use client" 
-
+"use client";
+import { FaArrowRight } from "react-icons/fa";
 import { FaWhatsapp, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
@@ -9,8 +9,7 @@ import { TbWorldHeart } from "react-icons/tb";
 import Link from "next/link";
 
 function Contact() {
-  
-  const [state, handleSubmit] = useForm("mqwwqljb");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORMSPREE);
 
   return (
     <>
@@ -104,10 +103,21 @@ function Contact() {
                   <FaLinkedin className="text-accent text-[25px]" />
                   <p>EL MEHDI EL FHAILI</p>
                 </span>
-                <Link key="portfolio" href={"/"} className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
+                <div
+                 onClick={() =>
+                  window.open(
+                   "https://elmehdi-elfhaili.my.canva.site/stagiaire?fbclid=PAZXh0bgNhZW0CMTEAAaangXrDhr0TZDTBkvn_PdrmiEdSOfCJPS2YOgvUtIzUkQHnEAlvCIJaW-A_aem_GETynREYshQVf_T42rp3Yw",
+                    "_blank",
+                    "noopener,noreferrer"
+                  )
+                }
+                 
+                  className="flex text-white items-center hover:cursor-pointer hover:text-gray-400 gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3"
+                >
                   <TbWorldHeart className="text-accent text-[25px]" />
                   <p>ancien portfolio </p>
-                </Link>
+                  <FaArrowRight />
+                </div>
                 <span className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
                   <FaMapMarkerAlt className="text-accent text-[25px]" />
                   <p>MAROC BENGUERIR HAY RIYAD </p>

@@ -265,7 +265,8 @@ const resume = () => {
                     </h2>
                     <ul className=" text-[12px] text-white/60  list-disc pl-5 space-y-1">
                       <li>Configuration CISCO.</li>
-                      <li>Router configuration CISCO. </li>
+                      <li>Routeur et switch configuration. </li>
+                      <li>La Solution de VoIP 3CXPhone, la supervision Zabbix et Grafana. </li>
                     </ul>
                   </div>
 
@@ -276,7 +277,7 @@ const resume = () => {
                     </h2>
                     <ul className="text-[12px] text-white/60 list-disc pl-5 space-y-1">
                       <li>Windows : Windows Server 2016/2019.</li>
-                      <li>Linux : Red Hat, Fedora, CentOS.</li>
+                      <li>Linux : Red Hat:Fedora, CentOS.</li>
                     </ul>
                   </div>
 
