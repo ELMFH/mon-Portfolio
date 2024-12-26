@@ -1,13 +1,16 @@
-"use client"
-import { FaWhatsapp, FaTiktok, FaGithub } from "react-icons/fa";
+"use client" 
+
+import { FaWhatsapp, FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { TbWorldHeart } from "react-icons/tb";
+
 import Link from "next/link";
 
 function Contact() {
-  const [state, handleSubmit] = useForm("mjvnrwkr");
+  
+  const [state, handleSubmit] = useForm("mqwwqljb");
 
   return (
     <>
@@ -71,7 +74,9 @@ function Contact() {
                 {state.submitting ? "Submitting..." : "Submit"}
               </button>
               {state.succeeded && (
-                <p className="text-green-500 mt-4">Merci de vous joindre à nous !</p>
+                <p className="text-green-500 mt-4">
+                  Merci de vous joindre à nous !
+                </p>
               )}
             </form>
           </div>
@@ -82,7 +87,8 @@ function Contact() {
               <p className="text-2xl mb-6 text-accent">Connectons-nous</p>
               <div className="text-gray-400 md:mb-8 mb-4">
                 <p>
-                veuillez remplir le formulaire ci-dessous, <br /> ou nous contacter via WhatsApp ou d'autres plateformes.
+                  veuillez remplir le formulaire ci-dessous, <br /> ou nous
+                  contacter via WhatsApp ou d'autres plateformes.
                 </p>
               </div>
               <div className=" flex-col items-center ml-4">
@@ -91,19 +97,19 @@ function Contact() {
                   <p>+212 617735607</p>
                 </span>
                 <span className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
-                  <FaGithub className="text-accent text-[25px]"  />
+                  <FaGithub className="text-accent text-[25px]" />
                   <p>EL MFH</p>
                 </span>
                 <span className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
-                  <FaLinkedin className="text-accent text-[25px]"   />
+                  <FaLinkedin className="text-accent text-[25px]" />
                   <p>EL MEHDI EL FHAILI</p>
                 </span>
-                <Link className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
-                  <TbWorldHeart className="text-accent text-[25px]"  />
+                <Link key="portfolio" href={"/"} className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
+                  <TbWorldHeart className="text-accent text-[25px]" />
                   <p>ancien portfolio </p>
                 </Link>
                 <span className="flex text-white items-center gap-3 mb-4 border-b w-[90%] border-gray-500 pb-3">
-                  <FaMapMarkerAlt className="text-accent text-[25px]"  />
+                  <FaMapMarkerAlt className="text-accent text-[25px]" />
                   <p>MAROC BENGUERIR HAY RIYAD </p>
                 </span>
               </div>
